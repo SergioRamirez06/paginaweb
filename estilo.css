@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{
+        background: url(../paginaweb/imagenes/9618wide.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+        .menu{
+            background: rgb(0, 0, 0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgb(255, 255, 255,.5);
+        }
+        .logo{
+            flex: 1 1 auto;
+        }
+            .logo a{
+                color: white;
+                }
+                 .logo a:hover{
+                    color: black;
+                        }
+        .logo img{
+            height: 55px;
+        }
+        .nav{
+            flex: 1 1 auto;
+        }
+            .nav a{
+                color: white;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+                .nav a:hover{
+                    color: black;
+                    }
+        .social{
+            flex: 1 1 auto;
+        }
+            .social a{
+                font-size: 18px;
+                color: white;
+                padding: 0 5px;
+                }
+                    .social a :hover{
+                        color: black;
+                        }
+
+        
+        .text{
+            height: 500px;
+            display: flex;
+            align-items: center;
+           
+        }
+            h2{
+                font-family: "lora", serif;
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+                
+            }
+
+
+    .seciones{
+        display: flex;       
+    }
+        .contenido{
+            background: #ffffff;;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .articulo{
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 15px;
+            flex: 1 1 45%;
+            background: #ececec;
+        }
+        .articulo img{
+            width: 100%;
+        }
+        .articulo a{
+            color: #fff;
+            font-size: 13px;
+            padding: 10px;
+            background: black;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .articulo a:hover{
+            background: #827676;
+        }
+            h1{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color: #fff;
+            }
+        .navegacion{
+            background: #000;
+            flex: 1 1 100%;
+            margin: 10px 10px 0 0px;
+        }
+            .navegacion a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 0;
+        }
+            .aside img{
+                width: 100%;
+            }
+            .publicidad a{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px;
+                background: #000;
+                margin: 10px 0;
+                display: inline-block;
+            }
+            .publicidad a:hover{
+                background: #827676;
+            }
+            h3{
+                background:#000;
+                color: #fff;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+      
+
+
+
+
+
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            text-align: center;
+        }
+        .pie h4{
+            color: #fff;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+
+@media all and (max-width: 800px){
+    .seciones{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .contenido{
+        flex-direction: column;
+    }
+}
